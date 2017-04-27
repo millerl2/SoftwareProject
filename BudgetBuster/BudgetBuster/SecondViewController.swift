@@ -22,6 +22,8 @@ class SecondViewController: UIViewController {
             name.text = ""
             amount.text = ""
         }
+        name.resignFirstResponder()
+        amount.resignFirstResponder()
     }
     
     override func viewDidLoad() {

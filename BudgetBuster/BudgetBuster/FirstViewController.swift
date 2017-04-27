@@ -52,12 +52,17 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             nameData.remove(at: indexPath.row)
             amountData.remove(at: indexPath.row)
             balance = amountData.reduce(0,+)
+            balanceString = "$" + String(format: "%.2f", balance)
+            balanceDisplay.text = balanceString
             myTableView.reloadData()
+            
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         balance = amountData.reduce(0,+)
+        balanceString = "$" + String(format: "%.2f", balance)
+        balanceDisplay.text = balanceString
         myTableView.reloadData()
     }
 
