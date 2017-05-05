@@ -4,9 +4,9 @@ public class Assignment4
 	{
 		DisplayMethod dm = new GUIDisplay();
 
-		CreditCard card1 = new CreditCard("John Wayne", 4200.0, dm , 12.31);
-		DebitCard card2 = new DebitCard("Fred Savage", 824.0, dm, 13.4);
-		DebitCard card3 = new DebitCard("Ronald McDonald", 500.0, dm, 10.0);
+		CreditCard card1 = new CreditCard("John Smith", 200000.00, dm , 12.31);
+		DebitCard card2 = new DebitCard("King Savage", 1000000.00, dm, 13.4);
+		DebitCard card3 = new DebitCard("Peter Pan", 5.0, dm, 10.0);
 		
 		card3.setIssuer("Visa");
 		card2.setIssuer("MasterCard");
